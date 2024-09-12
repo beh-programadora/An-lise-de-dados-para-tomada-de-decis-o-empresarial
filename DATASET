@@ -1,0 +1,34 @@
+ Arquivo de Tamanho Pequeno (Menos de 100 MB)
+Se o arquivo com os dados históricos do Bitcoin for pequeno o suficiente, você pode armazená-lo diretamente no repositório, na pasta data/.
+
+bitcoin-analysis/
+├── data/
+│   └── bitcoin_historical_data.csv  # Dados históricos do Bitcoin
+
+## Dataset
+O dataset contendo os dados históricos do Bitcoin está armazenado na pasta `data/` deste repositório.
+ Você pode acessar diretamente o arquivo `bitcoin_historical_data.csv` para realizar a análise.
+
+
+Arquivo de Grande Tamanho (Mais de 100 MB)
+Se o conjunto de dados for muito grande para ser armazenado diretamente no GitHub, você pode fornecê-lo através do link para download. 
+Hospede o arquivo em um serviço de armazenamento (por exemplo, Google Drive) e coloque conforme instruções noREADME.mdpára
+
+## Dataset
+O dataset é grande demais para ser armazenado diretamente neste repositório. Você pode fazer o download dos dados históricos do Bitcoin através do seguinte link:
+
+[Download do dataset (Google Drive)](https://drive.google.com/file/d/1aJmF3UUW59s3oL3saqi3W9csnYUYs4O4/view?usp=sharing)
+
+Após o download, mova o arquivo para a pasta `data/` do projeto, para que o código possa acessá-lo corretamente.
+
+import pandas as pd
+
+# Definir o caminho do arquivo
+file_path = 'data/bitcoin_historical_data.csv'
+
+# Carregar o dataset e tratar erros
+try:
+    df = pd.read_csv(file_path)
+    print("Dados carregados com sucesso!")
+except FileNotFoundError:
+    print("Erro: Arquivo não encontrado. Certifique-se de que o arquivo está na pasta 'data/'.")
