@@ -1,0 +1,9 @@
+pandas==2.0.3
+numpy==1.24.3
+matplotlib==3.7.1
+seaborn==0.12.2
+scikit-learn==1.2.2
+
+Instruções de instalação
+Para instalar todos os comandos necessários para o projeto, os usuários devem rodar o seguinte no terminal, dentro da pasta do projeto:
+pip install -r requirements.txt
