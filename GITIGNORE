@@ -1,0 +1,10 @@
+# Ignorar arquivos gerados localmente
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Ignorar dados grandes
+data/*.csv
+
+# Arquivos de modelos treinados
+*.pkl
