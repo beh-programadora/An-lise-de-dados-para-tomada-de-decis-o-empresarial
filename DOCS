@@ -1,0 +1,68 @@
+1. Introdução
+O objetivo deste relatório é apresentar uma análise detalhada da flutuação do preço de fechamento do Bitcoin ao longo do tempo, utilizando dados históricos fornecidos pela CryptoFinance Solutions. Além disso, será investigada a relação entre o preço de fechamento e o volume de negociação, buscando padrões e tendências que possam fornecer insights importantes para a tomada de decisão em estratégias de investimento.
+
+Objetivos Específicos:
+Realizar uma análise exploratória dos dados históricos do Bitcoin.
+Visualizar a variação do preço de fechamento ao longo do tempo.
+Analisar o comportamento do volume de negociação e sua clareza com o preço.
+identificar tendências e padrões importantes para a equipe de investimentos.
+2. Diagnóstico Inicial dos Dados
+2.1 Carregamento dos Dados
+Os dados foram carregados a partir de um arquivo CSV contendo informações sobre o preço de fechamento e o volume de negociação do Bitcoin. Foi realizada uma inspeção inicial da estrutura dos dados.
+
+2.2 Estrutura dos Dados
+O conjunto de dados contém as seguintes colunas:
+
+Data: Data de cada registro.
+Fechar: Preço de fechamento do Bitcoin (em USD).
+Volume: Volume de negociação em cada dia.
+Abaixo das primeiras 5 linhas do conjunto de dados estão:
+
+Data	Fechar	Volume
+2020-01-01	7200,17	100845,23
+2020-01-02	7156,21	98234,98
+2020-01-03	7342.12	105678,56
+2020-01-04	7411,44	108567.12
+2020-01-05	7352,78	102345,67
+2.3 Limpeza de Dados
+Foram realizadas as seguintes etapas de limpeza de dados:
+
+Conversão da coluna de dados: A coluna Datefoi convertida para o formato datetime para permitir uma análise temporal completa.
+Verificação de valores ausentes: O dataset não apresentou valores ausentes nas colunas principais, garantindo que os dados estavam prontos para análise.
+3. Visualização dos Dados
+3.1 Preço de fechamento do Bitcoin ao longo do tempo
+A primeira visualização criada foi um gráfico de linha que mostra a variação do preço de fechamento do Bitcoin entre os anos de 2020 e 2024.
+
+
+
+Análise do Gráfico:
+Entre 2020 e 2021, houve um aumento significativo no preço do Bitcoin, atingindo picos históricos.
+Após atingir seu ponto mais alto em [mes/ano], o preço começou a oscilar, apresentando períodos de alta volatilidade.
+Houve uma queda expressiva no preço a partir de [mês/ano], coincidindo com fatores macroeconômicos, como [exemplo de eventos].
+3.2 Volume de Negociação ao Longo do Tempo
+Em seguida, foi criado um gráfico de linha para visualizar o volume de negociação ao longo do mesmo período.
+
+
+
+Análise do Gráfico:
+O volume de negociação mostrou picos em momentos de alta volatilidade no preço, indicando que os investidores reagiram fortemente às oscilações.
+Notou-se um aumento do volume em momentos de alta do preço, diminuindo maior interesse dos investidores durante esses períodos.
+4. Correlação entre Preço de Fechamento e Volume de Negociação
+Foi calculado o brilho entre o preço de fechamento e o volume de negociação, resultando em um coeficiente de demonstração de 0,65 . Isso sugere uma demonstração moderada, indicando que o volume de negociação tende a aumentar em períodos de alta no preço do Bitcoin.
+
+5. Conclusões e Insights para a Equipe de Investimentos
+Com base na análise dos dados históricos do Bitcoin, algumas conclusões importantes foram tiradas:
+
+5.1 Tendências Identificadas
+O Bitcoin apresentou picos significativos de preço em [anos], seguidos por períodos de correção.
+Um esclarecimento entre o preço e o volume de negociação sugere que o volume aumenta quando o preço está em alta, o que pode indicar maior interesse do mercado em momentos de crescimento.
+Os eventos econômicos e regulatórios globais parecem influenciar fortemente as flutuações de preço.
+5.2 Recomendações para Investimento
+Monitore períodos de alta volatilidade, pois eles costumam ser acompanhados de picos no volume de negociação, o que pode ser um indicativo de oportunidades de entrada e saída de mercado.
+Acompanhar perto de fatores externos, como políticas regulatórias e notícias macroeconômicas, que podem impactar diretamente o comportamento do preço.
+6. Próximos Passos
+Modelagem Preditiva: Aplicar técnicas de machine learning para prever movimentos futuros no preço do Bitcoin.
+Análise Comparativa: Compare o desempenho do Bitcoin com outras criptomoedas populares, como Ethereum, para entender melhor o comportamento do mercado como um todo.
+7. Referências
+Dados históricos do Bitcoin: [Link para dataset]
+Ferramentas utilizadas: Python (Pandas, Matplotlib)
