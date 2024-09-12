@@ -37,3 +37,13 @@ Nascido no mar
 
 LICENÇA MIT
 Este projeto está sob licença MIT.
+
+### 3. `requirements.txt`
+Certifique-se de listar as bibliotecas necessárias no arquivo `requirements.txt`:
+
+```txt
+pandas
+numpy
+matplotlib
+seaborn
+
